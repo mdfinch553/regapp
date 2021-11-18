@@ -1,0 +1,4 @@
+registration/.coverage
+registration/.coverage
+registration/regserve/__pycache__/tests.cpython-39.pyc
+registration/regserve/__pycache__/urls.cpython-39.pyc
