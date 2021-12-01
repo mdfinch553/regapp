@@ -8,6 +8,13 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
+
+TO DO:
+
+MIGRATE DATA:
+py manage.py make migrations regserve
+py manage.py sqlmigrate regserve sql
+py manage.py migrate
 """
 
 from pathlib import Path
@@ -31,6 +38,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'regserve.apps.RegserveConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
