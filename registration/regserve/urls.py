@@ -5,6 +5,6 @@ from . import views
 application = 'regserve'
 
 urlpatterns = [
-    path('data/students/', )
+    path('data/students/', views.StudentListCreate.asView)
     path('', views.index, name='index'),
 ]
