@@ -14,9 +14,10 @@ TO DO:
 MIGRATE DATA:
 py manage.py make migrations regserve
 py manage.py sqlmigrate regserve sql
-py manage.py migrate
-run tests using pytest
-pip install python-rest-framework
+py manage.py migrate 
+run tests using pytest python manage.py test
+pip install python-rest-framework/pip install djangorestframework
+/regserve/data/students
 """
 
 from pathlib import Path
@@ -41,6 +42,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'regserve.apps.RegserveConfig',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
