@@ -8,16 +8,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
-
-TO DO:
-
-MIGRATE DATA:
-py manage.py make migrations regserve
-py manage.py sqlmigrate regserve sql
-py manage.py migrate 
-run tests using pytest python manage.py test
-pip install python-rest-framework/pip install djangorestframework
-/regserve/data/students
 """
 
 from pathlib import Path
