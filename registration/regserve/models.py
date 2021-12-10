@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db.models.enums import Choices
 from django.test.testcases import TestCase
+from django.urls import reverse, reverse_lazy
 
 class Person(models.Model):
     firstname = models.CharField(max_length=50)
@@ -45,3 +46,6 @@ class Student(Person):
 
     def __str__(self):
         return f'StudentID: {self.id}: {super(Student, self).__str__()}, year in school: {self.schoolyear}, major: {self.major}'
+    
+    def get_absolute_url(self):
+        return reverse_lazy('regserve:students')
