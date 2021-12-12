@@ -3,3 +3,8 @@ registration/.coverage
 registration/regserve/__pycache__/tests.cpython-39.pyc
 registration/regserve/__pycache__/urls.cpython-39.pyc
 registration/regserve/__pycache__/tests.cpython-39.pyc
+registration/registration/__pycache__/urls.cpython-39.pyc
+registration/regserve/__pycache__/apps.cpython-39.pyc
+registration/regserve/__pycache__/models.cpython-39.pyc
+registration/regserve/__pycache__/serializers.cpython-39.pyc
+registration/regserve/__pycache__/urls.cpython-39.pyc

@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#url patterns for regserve application
 urlpatterns = [
     path('regserve', include('regserve.urls')),
     path('admin/', admin.site.urls),
