@@ -1,0 +1,28 @@
+2021-12-12 02:10:07,049 : STUDENT API TEST: insde test, response is <Response status_code=200, "application/json">
+
+2021-12-12 02:10:07,049 : STUDENT API TEST: insde test, response content is b'[{"id":3,"firstname":"First","lastname":"Student","idnumber":100,"email":"first@student.edu","schoolyear":"SR","major":"CS","gpa":4.0,"datecreated":"2021-12-12T02:10:07.042830Z","datemodified":"2021-12-12T02:10:07.042846Z"},{"id":4,"firstname":"Second","lastname":"Student","idnumber":100,"email":"second@student.edu","schoolyear":"SR","major":"ENG","gpa":2.0,"datecreated":"2021-12-12T02:10:07.043422Z","datemodified":"2021-12-12T02:10:07.043434Z"}]'
+
+2021-12-12 02:10:07,049 : STUDENT API TEST: insde test, student stream is <_io.BytesIO object at 0x7f9edcc5a0e0>
+
+2021-12-12 02:10:07,049 : STUDENT API TEST: insde test, student api data is [{'id': 3, 'firstname': 'First', 'lastname': 'Student', 'idnumber': 100, 'email': 'first@student.edu', 'schoolyear': 'SR', 'major': 'CS', 'gpa': 4.0, 'datecreated': '2021-12-12T02:10:07.042830Z', 'datemodified': '2021-12-12T02:10:07.042846Z'}, {'id': 4, 'firstname': 'Second', 'lastname': 'Student', 'idnumber': 100, 'email': 'second@student.edu', 'schoolyear': 'SR', 'major': 'ENG', 'gpa': 2.0, 'datecreated': '2021-12-12T02:10:07.043422Z', 'datemodified': '2021-12-12T02:10:07.043434Z'}]
+
+2021-12-12 02:10:07,050 : STUDENT API TEST: insde test, first student data is {'id': 3, 'firstname': 'First', 'lastname': 'Student', 'idnumber': 100, 'email': 'first@student.edu', 'schoolyear': 'SR', 'major': 'CS', 'gpa': 4.0, 'datecreated': '2021-12-12T02:10:07.042830Z', 'datemodified': '2021-12-12T02:10:07.042846Z'} id is 3
+
+2021-12-12 02:10:07,051 : STUDENT API TEST: insde test, first student db is StudentID: 3: Name: First Student, Id Number 100, Email: first@student.edu, year in school: SR, major: CS
+
+2021-12-12 02:10:07,052 : STUDENT API TEST: insde test, first student serializer is StudentSerializer(<Student: StudentID: 3: Name: First Student, Id Number 100, Email: first@student.edu, year in school: SR, major: CS>, data={'id': 3, 'firstname': 'First', 'lastname': 'Student', 'idnumber': 100, 'email': 'first@student.edu', 'schoolyear': 'SR', 'major': 'CS', 'gpa': 4.0, 'datecreated': '2021-12-12T02:10:07.042830Z', 'datemodified': '2021-12-12T02:10:07.042846Z'}):
+    id = IntegerField(label='ID', read_only=True)
+    firstname = CharField(max_length=50)
+    lastname = CharField(max_length=50)
+    idnumber = IntegerField(max_value=9223372036854775807, min_value=0)
+    email = EmailField(allow_blank=True, max_length=254, required=False)
+    schoolyear = ChoiceField(choices=[('FR', 'Freshman'), ('SO', 'Sophomore'), ('JR', 'Junior'), ('SR', 'Senior'), ('GR', 'Graduate')])
+    major = ChoiceField(choices=[('CS', 'Computer Science'), ('ENG', 'Engineering'), ('SC', 'Science'), ('BUS', 'Business'), ('LAW', 'Law'), ('NUR', 'Nursing'), ('MAT', 'Math')])
+    gpa = FloatField(required=False)
+    datecreated = DateTimeField(read_only=True)
+    datemodified = DateTimeField(read_only=True)
+
+2021-12-12 02:10:07,054 : STUDENT API TEST: insde test, first student serializer is valid? True
+
+2021-12-12 02:10:07,056 : STUDENT API TEST: insde test, first student api is StudentID: 3: Name: First Student, Id Number 100, Email: first@student.edu, year in school: SR, major: CS
+
